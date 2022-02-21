@@ -112,7 +112,6 @@ nav ul li a i {
 
 #timer-section ul li a:hover {
   background-color: var(--button-hover-color);
-  font-weight: 700;
 }
 
 #timer-section ul li a::before {
@@ -131,6 +130,10 @@ nav ul li a i {
 @media screen and (max-width: 980px) {
   #timer-section h1 {
     font-size: 25vw;
+  }
+
+  #task-section > div {
+    width: 90vw;
   }
 }
 
@@ -152,4 +155,147 @@ nav ul li a i {
   cursor: pointer;
   background-color: rgb(218, 161, 161);
   color: white;
+}
+
+/* Task section styles*/
+#task-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#task-section > div > p:first-of-type {
+  color: #e7c5c3;
+  text-align: center;
+}
+
+#task-section > div > p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#task-section > div {
+  width: 35vw;
+}
+
+#tasks-container {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+#tasks-container > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+#tasks-container .fa-ellipsis-vertical {
+  padding: 8px 15px;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+#tasks-container .fa-ellipsis-vertical:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 980px) {
+  #task-section > div {
+    width: 80vw;
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+}
+
+#tasks-container > div:nth-child(2) {
+  border-left: 5px solid black;
+}
+
+#tasks-container > div:nth-child(3) .task-title {
+  color: rgb(182, 182, 182);
+  text-decoration: line-through;
+}
+
+#tasks-container > div:nth-child(3) .fa-circle-check {
+  color: var(--background-color);
+}
+
+.task > div {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.task .task-title {
+  color: black;
+  font-weight: 700;
+}
+
+.task .task-numbers {
+  color: rgb(179, 179, 179);
+  margin-right: 5px;
+}
+
+.task .task-numbers strong {
+  font-size: 1.1rem;
+}
+
+.task .task-settings {
+  background-color: white !important;
+  border: 1px solid rgb(194, 194, 194);
+  color: gray;
+}
+
+.task .task-settings:hover {
+  background-color: rgb(209, 202, 202) !important;
+}
+
+.task .fa-circle-check:first-of-type {
+  color: rgb(185, 185, 185);
+}
+
+#tasks-container .add-task-button {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  background-color: #c94b46;
+  border: dashed 1px rgb(226, 202, 202);
+  color: rgb(226, 202, 202);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#tasks-container .add-task-button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+}
+
+#tasks-container .add-task-button .fa-circle-plus {
+  margin-right: 10px;
+}
+
+#tasks-container .task-finished-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-top: 1px solid white;
+  padding: 20px;
+  column-gap: 30px;
+  background-color: var(--secondary-color);
+}
+
+#tasks-container .task-finished-container strong {
+  font-size: 1.2rem;
 }
