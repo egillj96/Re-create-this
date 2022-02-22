@@ -385,3 +385,73 @@ nav ul li a i {
 #about-section > div:last-child {
   margin-bottom: 30px;
 }
+
+/*Footer styles*/
+footer {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+
+footer ul li a {
+  color: #634747;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+footer ul li a:hover {
+  color: #f05b56;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+footer > div {
+  display: flex;
+  margin-top: 18px;
+}
+
+footer i {
+  color: gray;
+}
+
+footer i:hover {
+  color: #f05b56;
+}
+
+.footer-icons a {
+  margin-right: 10px;
+}
+
+footer p {
+  color: #634747;
+  margin-top: 18px;
+}
+
+footer p strong {
+  color: #f05b56;
+}
+
+footer p a {
+  color: #f05b56;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer p a:hover {
+  color: #a13834;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer p:last-child {
+  font-size: 0.7rem;
+}
