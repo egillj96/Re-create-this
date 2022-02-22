@@ -299,3 +299,89 @@ nav ul li a i {
 #tasks-container .task-finished-container strong {
   font-size: 1.2rem;
 }
+
+/* About section styles*/
+#about-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-section h2 {
+  color: #584040;
+  font-size: 2rem;
+  width: 40vw;
+  margin-top: 60px;
+}
+
+#about-section > div h3 {
+  color: #584040;
+  font-size: 1.4rem;
+}
+
+#about-section > div h3::after {
+  content: "";
+  display: block;
+  width: 24px;
+  padding-top: 8px;
+  border-bottom: 4px solid #f05b56;
+  opacity: 0.6;
+}
+
+#about-section > div p {
+  color: #7a5a5a;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+#about-section > div {
+  width: 40vw;
+  margin-top: 40px;
+}
+
+#about-section > div p strong {
+  color: #f05b56;
+}
+
+@media screen and (max-width: 980px) {
+  #about-section h2 {
+    width: 80vw;
+  }
+  #about-section > div {
+    width: 80vw;
+  }
+}
+
+#about-section > div ol {
+  color: #7a5a5a;
+  padding: 20px 0px 0px 40px;
+}
+
+#about-section > div ol li {
+  margin-top: 10px;
+}
+
+#about-section > div ul {
+  color: #7a5a5a;
+  padding: 20px 0px 0px 40px;
+  list-style-type: none;
+}
+
+#about-section > div ul li {
+  margin-top: 10px;
+}
+
+#about-section > div ul li::before {
+  content: "\2022";
+  color: #f05b56;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#about-section > div:last-child {
+  margin-bottom: 30px;
+}
